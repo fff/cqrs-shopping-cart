@@ -1,6 +1,4 @@
-#basic jre image "cqrs_sc/jre7"
-FROM ubuntu:12.10
+FROM cqrs_repo/jre
 MAINTAINER fff "milel.f@gmail.com"
 RUN apt-get update
-RUN apt-get install -y  openjdk-7-jre-headless
- 
+RUN apt-get install -y jetty8
